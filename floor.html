@@ -1,0 +1,44 @@
+<html>
+<head>
+
+	<title>
+
+	</title>
+
+</head>
+
+
+<body>
+
+	<script>
+
+
+var maximum_stories = 20;
+
+var userinput = prompt("On what floor of the building is your office?");
+
+floor = parseInt(userinput);
+
+while (floor > maximum_stories)
+{
+	console.log(floor + "");
+
+var userinput = prompt("I'm sorry. You entered " + floor + ". We only have " + maximum_stories + " floors in our building. Please Try again.");
+
+floor = parseInt(userinput);
+
+
+
+}
+
+
+
+console.log(" Nice! Your office is located on floor " + floor);
+
+document.write(" Nice! Your office is located on floor " + floor);
+
+
+	</script>
+
+</body>
+</html>
